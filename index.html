@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kota Tegal</title>
+    <link rel="shortcut icon" href="assets/image/logosub.png" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header>
+      <div class="jumbotron">
+        <h1>KOTA TEGAL</h1>
+        <p>Tegal Laka-Laka</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#sejarah" class="button">Sejarah</a></li>
+          <li><a href="#geografis" class="button">Geografis</a></li>
+          <li><a href="#Destinasi" class="button">Destinasi</a></li>
+          <li><a href="#Kuliner" class="button">Kuliner</a></li>
+          <script type="text/javascript">
+            var h = new Date().getHours();
+            var m = new Date().getMinutes();
+            var s = new Date().getSeconds();
+            if (h >= 4 && h < 10) document.writeln("Selamat pagi");
+            if (h >= 10 && h < 15) document.writeln("Selamat siang");
+            if (h >= 15 && h < 18) document.writeln("Selamat sore");
+            if (h >= 18 || h < 4) document.writeln("Selamat malam");
+          </script>
+        </ul>
+      </nav>
+
+      <div class="slides">
+        <div class="slide">
+          <img src="assets/image/alun_alun.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/image/guci.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/image/Lapangan Alun-Alun.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/image/Tugu Slawi.png" alt="" />
+        </div>
+        <div class="navigation">
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(-1)">&#10095;</a>
+        </div>
+      </div>
+
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides((slideIndex += n));
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("slide");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slides[slideIndex - 1].style.display = "block";
+        }
+      </script>
+    </header>
+    <main>
+      <div id="content">
+        <article id="sejarah" class="card">
+          <h2>Sejarah</h2>
+          <img
+            src="assets/image/Foto Jadul.png"
+            class="featured-image"
+            alt="sejarah"
+          />
+          <p>
+            Secara historis dijelaskan bahwa eksistensi dari Kota Tegal tidak
+            lepas dari peran Ki Gede Sebayu. Bangsawan ini adalah saudara dari
+            Raden Benowo yang pergi kearah Barat dan sampai di tepian sungai
+            Gung. Melihat kesuburan tanahnya, Ki Gede Sebayu tergugah dan
+            berniat bersama-sama penduduk meningkatkan hasil pertanian dengan
+            memperluas lahan serta membuat saluran pengairan. Daerah yang
+            sebagian besar merupakan tanah lading tersebut kemudian dinamakan
+            Tegal.
+          </p>
+          <br />
+          <p>
+            Selain berhasil memajukan pertanian, dia juga merupakan ahli agama
+            yang telah membimbing warga masyarakat dalam menanamkan rasa
+            keimanan kepada Tuhan Yang Maha Esa. Atas jasanya tersebut, akhirnya
+            dia diangkat menjadi pemimpin dan panutan warga masyarakat. Kemudian
+            oleh Bupati Pemalang dikukuhkan menjadi sesepuh dengan pangkat Juru
+            Demung atau Demang.
+          </p>
+          <br />
+          <p>
+            Pengangkatan Ki Gede Sebayu menjadi Pemimpin Tegal dilaksanakan pada
+            perayaan tradisional setelah menikmati hasil panen padi dan hasil
+            pertanian lainnya.
+          </p>
+        </article>
+
+        <article id="geografis" class="card">
+          <h2>Geografis</h2>
+          <img
+            src="assets/image/Geografis-Kota-Tegal.png"
+            class="featured-image"
+            alt="geografis"
+          />
+          <p>
+            Kota Tegal merupakan salah satu wilayah di Propinsi Jawa Tengah yang
+            berada di ujung barat dan terletak di pantai utara pulau Jawa.
+            Secara astronomis terletak pada 109&deg; 08' sampai 109&deg; 10'
+            garis Bujur Timur dan 6&deg; 50' sampai 6&deg; 53' garis Lintang
+            Selatan, dan secara geografis terletak pada pertigaan jalur
+            Purwokerto - Jakarta dan Semarang - Jakarta. Wilayah Kota Tegal
+            berbatasan langsung dengan tiga kabupaten, yaitu sebelah Timur
+            Kabupaten Pemalang, sebelah Selatan Kabupaten Tegal dan sebelah
+            barat Kabupaten Brebes.
+          </p>
+          <br />
+          <p>
+            Di sebelah Utara Kota tegal berbatasan langsung dengan Laut Jawa.
+            Pada tahun 1987, Kota Tegal mengalami pemekaran wilayah yang berasal
+            dari Kabupaten Tegal, ditambah dengan wilayah Kabupaten Brebes, yang
+            dikenal dengan sebutan <q>Bokong Semar</q>. Luas wilayah saat ini
+            adalah 39.68 km<sup>2</sup>, atau sekitar 0.11% dari luas Jawa
+            Tengah. Kota ini terbagi menjadi 4 Kecamatan dengan 27 Kelurahan,
+            dengan wilayah Kecamatan terluas Tegal Barat yaitu sebesar 15.13
+            km<sup>2</sup> atau sekitar 38.13% luas wilayah Kota Tegal.
+          </p>
+        </article>
+
+        <article id="Destinasi" class="card">
+          <h2>Destinasi</h2>
+          <p>
+            Ngomongin soal Tegal, tentu ingatan Anda mungkin akan langsung
+            tertuju pada warteg <q>Warung Tegal</q> dan bahasa dialek
+            <q>Ngapak</q> -nya yang unik. Namun, jika Anda menelusuri lebih jauh
+            kota pantura ini, Anda akan terkagum-kagum melihat keindahan objek
+            wisatanya yang eksotis dan menarik.
+          </p>
+          <p>
+            Tegal memang mempunyai destinasi wisata yang tak kalah keren dengan
+            tempat wisata di Semarang, Brebes, Pekalongan, Purwokerto, dan
+            daerah lain di sekitarnya. Sebut saja Guci dan Rita Park yang cukup
+            populer di Jateng. Soal harga tiket masuk tak usah kuatir, Anda
+            tinggal pilih mau objek wisata yang gratis, murah meriah, sampai
+            yang mahal tersedia di Kota ini.
+          </p>
+          <br />
+          <section>
+            <h3>1. Pemandian Air Panas Guci</h3>
+            <img
+              src="assets/image/guci.png"
+              class="featured-image"
+              alt="guci"
+            />
+            <p>
+              Tempat wisata di Tegal yang pertama adalah wahana pemandian air
+              panas Guci. Tempat pemandian ini selalu ramai di akhir pekan atau
+              hari libur. Letaknya di Jl. Objek Wisata Guci, Sigedong, Bumijawa,
+              Tegal, Jawa Tengah.
+            </p>
+            <br />
+            <p>
+              Tempat ini cukup unik, karena suhu air berbeda beda, tergantung
+              dari tingkatannya, dimana ada 25 buah tingkatan. Adapun sumber
+              panasnya berasal dari Gunung Slamet. air
+            </p>
+            <br />
+            <p>
+              Jika anda mandi disini, penyakit kulit bisa sembuh karena air
+              mengandung belerang. Oh ya, bagi anda yang memiliki riwayat
+              penyakit jantung jangan lama-lama mandinya.
+            </p>
+            <p>
+              <i class="fa fa-map-pin" style="font-size: 24px"></i>
+              <a href="https://goo.gl/maps/6Exi2cwd5uxFGU8o9">
+                <strong
+                  >Lokasi : Kecamatan Bumijawa, Tegal, Jawa Tengah</strong
+                ></a
+              >
+            </p>
+          </section>
+          <br />
+          <section>
+            <h3>2. Pantai Alam Indah</h3>
+            <img
+              src="assets/image/Pantai Alam Indah.png"
+              class="featured-image"
+              alt="Pantai Alam Indah"
+            />
+            <p>
+              Objek wisata Pantai Alam Indah berada di Kota Tegal, Jawa Tengah,
+              tepatnya di Kelurahan Mintaragen, Kecamatan Tegal Timur. Dari
+              jalan Pantura hanya berjarak 500 meter. Meskipun belum ada jalur
+              angkutan kota yang menuju ke PAI, masyarakat dapat menjangkau
+              dengan transportasi apa pun, termasuk berjalan kaki. PAI merupakan
+              salah satu potensi yang turut menyumbangkan pendapatan asli daerah
+              (PAD) kepada Pemerintah Kota Tegal melalui pemungutan tiket masuk
+              dan retribusi parkir. Sebelumnya, PAI masih belum tertata.
+              Pertamanan dan fasilitas di dalamnya masih seadanya, padahal minat
+              masyarakat terhadap objek wisata itu cukup besar, terutama pada
+              saat hari Minggu dan peringatan hari besar nasional. Namun setelah
+              tahun 2004, pemerintah setempat, secara perlahan, mulai serius
+              mengelola dengan membenahi beberapa bagian penting antara lain
+              memperindah pertamanan, penyediaan lahan parkir yang lebih
+              representatif, pembangunan masjid, gardu pandang, dan dua buah
+              anjungan yang dapat digunakan untuk bercengkerama para pengunjung.
+            </p>
+            <p>
+              <i class="fa fa-map-pin" style="font-size: 24px"></i>
+              <a href="https://goo.gl/maps/iRsLv9eaFdntQVtd7">
+                <strong
+                  >Lokasi : Mintaragen, Kec. Tegal Tim., Kota Tegal, Jawa
+                  Tengah</strong
+                ></a
+              >
+            </p>
+          </section>
+          <br />
+          <section>
+            <h3>3. Purwahamba Indah</h3>
+            <img
+              src="assets/image/Purwahamba Indah.png"
+              class="featured-image"
+              alt="Purwahamba Indah"
+            />
+            <p>
+              Tempat wisata di Tegal selanjutnya andalan pantai Purwahamba
+              Indah. Pasir pantainya memang tidak putih seperti pasir di Bali,
+              tapi pemandangan pantai ini sangat indah. Lokasinya berada di Desa
+              Purwahamba, Kecamatan Suradadi ini, anda bisa menikmati banyak
+              fasilitas yang yang tersedia, seperti kolam renang, waterboom,
+              sepeda air, kereta mini, gazebo cafe, kebun binatang mini, arena
+              bermain anak dan masih banyak lagi. Dari terminal bus Kota Tegal,
+              anda hanya akan menempuh jarak sekitar 14 KM untuk mencapai pantai
+              ini.
+            </p>
+            <p>
+              <i class="fa fa-map-pin" style="font-size: 24px"></i>
+              <a href="https://goo.gl/maps/T27x1xjFxtxeAwMH9">
+                <strong
+                  >Lokasi: Desa Purwahamba, Kecamatan Suradadi, Tegal, Jawa
+                  Tengah</strong
+                ></a
+              >
+            </p>
+          </section>
+          <br />
+          <section>
+            <h3>4. Waduk Cacaban</h3>
+            <img
+              src="assets/image/Waduk Cacaban.png"
+              class="featured-image"
+              alt="Waduk Cacaban"
+            />
+            <p>
+              Waduk cacaban adalah tempat wisata di Tegal yang tidak boleh anda
+              lewatkan. Suasana yang damai dan asri serta panorama yang indah
+              akan memberikan kedamaian tersendiri bagi wisatawan. waduk ini
+              sendiri dibangun pada 1952 oleh Soekarno. Di waduk ini ada
+              berbagai macam wahana permainan seperti bumi perkemahan, tempat
+              bermain anak, panggung hiburan, warung apung, kapal wisata dil.
+              Sangat disayangkan sekali kalau anda ke Tegal di mengunjungi waduk
+              cacaban ini. Bagaimana? Anda tertarik? Lokasi: Cacaban, Kecamatan
+              Kedungbanteng, Kabupaten Tegal
+            </p>
+            <p>
+              <i class="fa fa-map-pin" style="font-size: 24px"></i>
+              <a href="https://goo.gl/maps/eJngtqhygbn21Yq79">
+                <strong
+                  >Lokasi: Cacaban, Kecamatan Kedungbanteng, Tegal, Jawa
+                  Tengah</strong
+                ></a
+              >
+            </p>
+          </section>
+        </article>
+
+        <article id="Kuliner" class="card">
+          <h2>Kuliner</h2>
+          <p>
+            Kota Tegal terkenal dengan julukannya sebagai Kota Warteg dan Kota
+            Bahari, jadi tidak heran bila Tegal dikatakan sebagai tempatnya
+            berburu wisata kuliner dari Jawa Tengah. Lokasinya yang strategis
+            masuk dalam jalur mudik Pantura menjadikan Tegal sebagai tempat
+            persinggahan untuk beristirahat dan berburu kuliner.
+          </p>
+          <p>
+            Yang menjadikannya istimewa, kuliner Tegal memiliki cita rasa yang
+            berbeda dari masakan Jawa pada umumnya. Berikut beberapa makanan
+            khas Tegal yang patut dicoba.
+          </p>
+          <br />
+          <section>
+            <h3>1. Tahu Aci</h3>
+            <img
+              src="assets/image/Tahu-Aci.png"
+              class="featured-image"
+              alt="Tahu Aci"
+            />
+            <p>
+              Tahu Aci merupakan makanan cemilan khas Tegal yang berbahan dasar,
+              Tahu, Aci (tepung kanji) dan diberi irisan daun kucai. Tahu Aci
+              sendiri telah menjadi cemilan spesial bagi masyarakat Tegal,
+              selain mempunyai rasa yang enak, Tahu Aci juga memiliki tekstur
+              yang unik dimana pada bagian luarnya terlihat Crspy sementara
+              dibagian dalamnya lembut dan juga kenyal. Saking larisnya cemilan
+              ini, tahu aci mulai dijajakan daerah-daerah lain dengan sebutan
+              bermacam-macam, salah satunya <q>tahu kuping.</q>
+            </p>
+          </section>
+          <br />
+          <section>
+            <h3>2. Soto Tegal</h3>
+            <img
+              src="assets/image/Soto-Tegal.png"
+              class="featured-image"
+              alt="Soto Tegal"
+            />
+            <p>
+              Mirip soto Pelakongan, soto Tegal juga memakai tauco. Berkuah
+              bening super gurih, dengan isian suun dan tauge. Enak dimakan
+              hangat dengan nasi atau lontong. Karena lokasinya berdekatan soto
+              Pekalongan dan Tegal memang mirip. Keduanya memakai campuran tauco
+              yang gurih beraroma tajam. Semakin enak diaduk dengan kaldunya
+              yang bening. Soto tegal bisa dibuat dari ayam kampung atau daging
+              sapi berlemak. Isiannya suun dan tauge. Pemakaian bumbu tauco
+              merupakan adaptasi dari kuliner China. Hasl fermentasi kedelai ini
+              rasanya gurih kuat. Kalau bosan dengan ayam, kamu bisa meracik
+              soto Tegal dengan daging sapi. Gunakan tauco berkualitas agar
+              rasanya gurih enak.
+            </p>
+
+            <p></p>
+          </section>
+
+          <br />
+          <section>
+            <h3>3. Kupat Glabed</h3>
+            <img
+              src="assets/image/Kupat-Glabed.png"
+              class="featured-image"
+              alt="Kupat Glabed"
+            />
+            <p>
+              Kalau kamu sedang berkunjung di Kota/Kabupaten Tegal, cicipi
+              makanan khas yang satu ini. Nikmati rasanya yang gurih dan nikmat,
+              selain mengenyangkan. Kupat Glabed adalah makanan dengan bahas
+              dasar ketupat yang dipotong-potong. Dengan kuah yang mengental dan
+              bewarna kuning. Glabed adalah sebutan warga Tegal untuk tekstur
+              kuah yang kental dan lengket. Kuah kupat ini berwarna kuning
+              seperti opor, namun teksturnya lebih kental. Selain dari segi
+              tekstur kuah juga ada taburan kerupuk kuning di atasnya. Dan yang
+              bikin seger makanan ini yaitu berasal dari kuah sambal yang begitu
+              khas. Orang awam mungkin menjadi tidak tertarik saat melihat
+              makanan ini. Karena kuahnya yang sangat mengental. Namun kalau
+              sudah mencoba, kamu bsia ketagihan karena kuahnya yang mengental
+              tersebut terasa gurih sekali.
+            </p>
+          </section>
+          <br />
+          <section>
+            <h3>4. Poles</h3>
+            <img
+              src="assets/image/Poles.png"
+              class="featured-image"
+              alt="Poles"
+            />
+            <p>
+              Poles, adalah kuliner Tegal yang hadir terlebih dahulu sebelum
+              olos. Jika olos itu bentuknya bulat, berbeda dengan poles. Poles
+              ini bentuknya lonjong dan memiliki semacam layer-layer dalam
+              kulitnya, seperti molen. Isiannya lebih mirip risoles, ada sayuran
+              seperti wortel di dalamnya. Namun ada tambahan tumbukan cabai
+              rawit sehingga rasanya sedikit lebih pedas.
+            </p>
+            <p>
+              Kemudian isian poles tadi dimasukan ke dalam kulit dari tepung
+              terigu yang sudah digiling terlebih dahulu kemudian di goreng
+              hingga kecoklatan. Lalu tiriskan dan siap santap. Jajanan seperti
+              ini memang cocoknya dimakan selagi hangat. Karena sensasi pedasnya
+              menjadi lebih terasa.
+            </p>
+          </section>
+        </article>
+      </div>
+
+      <aside>
+        <article class="profile card">
+          <header>
+            <h2>Kota Tegal</h2>
+            <br />
+            <figure>
+              <img src="assets/image/logo.png" alt="Lambang Kota Tegal" />
+              <figcaption>Lambang</figcaption>
+            </figure>
+          </header>
+          <br />
+          <section>
+            <h3>Informasi Lainnya :</h3>
+            <table>
+              <tr>
+                <th>Negara</th>
+                <td>: Indonesia</td>
+              </tr>
+              <tr>
+                <th>Tgl Berdiri</th>
+                <td>: 8 Agustus 1950</td>
+              </tr>
+              <tr>
+                <th>Luas Total</th>
+                <td>: 39,68 km<sup>2</sup></td>
+              </tr>
+              <tr>
+                <th>Bhs Daerah</th>
+                <td>: Jawa</td>
+              </tr>
+              <tr>
+                <th>Jumlah Kec.</th>
+                <td>: 4</td>
+              </tr>
+              <tr>
+                <th>Jumlah Desa</th>
+                <td>: 27</td>
+              </tr>
+              <tr>
+                <th>Populasi</th>
+                <td>: 287.959 Jiwa</td>
+              </tr>
+              <tr>
+                <th>Kepadatan</th>
+                <td>: 7.257 Jiwa / km<sup>2</sup></td>
+              </tr>
+              <tr>
+                <th>Kode Pos</th>
+                <td>: 52100</td>
+              </tr>
+            </table>
+            <br />
+            <h3>Info selengkapnya :</h3>
+            <table>
+              <th>
+                <i class="fa fa-instagram" style="font-size: 24px"></i>
+                <a href="https://www.instagram.com/infotegal/">
+                  <strong>@infotegal</strong></a
+                >
+              </th>
+            </table>
+          </section>
+        </article>
+      </aside>
+
+      <aside>
+        <article class="profile card">
+          <header>
+            <h2>Wali Kota</h2>
+            <br />
+            <figure>
+              <img
+                src="assets/image/Wali_Kota_Tegal_Dedy_Yon_Supriyono.png"
+                alt="Pejabat Daerah"
+              />
+              <figcaption>Pejabat Daerah</figcaption>
+            </figure>
+          </header>
+          <br />
+          <section>
+            <h3>Informasi Lainnya :</h3>
+            <table>
+              <tr>
+                <th>Nama</th>
+                <td>:Dedy Yon Supriyono, S.E., M.M.</td>
+              </tr>
+              <tr>
+                <th>Lahir</th>
+                <td>: Brebes, 14 Agustus 1980</td>
+              </tr>
+              <tr>
+                <th>Parpol</th>
+                <td>: Partai Demokrat</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
+
+      <aside>
+        <article class="profile card">
+          <header>
+            <h2>Profile</h2>
+            <br />
+            <figure>
+              <img src="assets/image/FotoDiri.png" alt="Foto Diri" />
+              <figcaption>Foto Diri</figcaption>
+            </figure>
+          </header>
+          <br />
+          <section>
+            <h3>Bio Data :</h3>
+            <table>
+              <tr>
+                <th>Nama</th>
+                <td>: Wimas Mutas Subkhan</td>
+              </tr>
+              <tr>
+                <th>Lahir</th>
+                <td>: Tegal, 10 Mei 2003</td>
+              </tr>
+              <tr>
+                <th>Status</th>
+                <td>: Mahasiswa/Semester 2</td>
+              </tr>
+              <tr>
+                <th>Alamat</th>
+                <td>: Tegal, Jawa Tengah</td>
+              </tr>
+            </table>
+            <br />
+            <h3>Social Media Account:</h3>
+            <table>
+              <th>
+                <i class="fa fa-facebook-square" style="font-size: 24px"></i>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100015656581365"
+                >
+                  <strong>Wimas Mutas S</strong></a
+                >
+              </th>
+            </table>
+            <table>
+              <th>
+                <i class="fa fa-instagram" style="font-size: 24px"></i>
+                <a href="https://www.instagram.com/wimasmutas/">
+                  <strong>@wimasmutas</strong></a
+                >
+              </th>
+            </table>
+            <table>
+              <th>
+                <i class="fa fa-whatsapp" style="font-size: 24px"></i>
+                <a href="http://wa.me/6289524974947">
+                  <strong>089524974947</strong></a
+                >
+              </th>
+            </table>
+            <table>
+              <th>
+                <i class="fa fa-twitter" style="font-size: 24px"></i>
+                <a href="https://twitter.com/wimassdouble_s">
+                  <strong>@wimassdouble_s</strong></a
+                >
+              </th>
+            </table>
+          </section>
+        </article>
+      </aside>
+    </main>
+    <footer>
+      <p>Submission Dasar Pemrograman Web &#169; 2022, Wimas Mutas Subkhan</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+
+body {
+    font-family:'Quicksand', sans-serif;    /* Tetapkan tipe font 'sans-serif' */
+}
+
+
+body {              /* Untuk menghilangkan nilai Margin & Padding standar browser. */
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+main {              /* Untuk memberi sedikit jarak antar konten */
+    padding: 20px;
+}
+
+
+nav a {             /* Naavigasi */
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {       /* Naavigasi */
+    font-weight: bold;
+}
+
+
+.jumbotron {        /* Memberi Background pada Header/judulnya */
+    padding: 30px;
+    background-color: #4f5ca4;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+
+nav li {            /* Membuat Navigasi menjadi tampil secara Horizontal. */
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+
+nav {               /* Background-color pada Navigasi. */
+    background-color: #3B4894;
+    padding: 5px;
+}
+
+
+nav {               /* Membuat Sticky Navigation */
+    background-color: #3B4894;
+    padding: 18px;
+    position: sticky;
+    top: 0;
+}
+
+
+.galeri {       /* Untuk menetapkan ukuran walpaper pada tampilan awal. */
+    width: 100%;
+    max-height: 550px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+
+/*===================SLIDER======================*/
+
+.slides{
+  width: 100%;
+}
+
+.slides .slide{
+  display: none;
+}
+
+.slides .slide img{
+    width: 100%;
+    max-height: 550px;
+    object-fit: cover;
+    object-position: center;
+    animation-name: fade;
+    animation-duration: 1.s;
+}
+
+.slides .navigation{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.slides .navigation .prev, .slides .navigation .next{
+  cursor: pointer;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background: rgba(0,0,0,0.2);
+  user-select: none;
+  transition: 0.6s ease;
+}
+
+.slides .navigation .prev:hover, .slides .navigation .next:hover{
+  background: rgba(0,0,0,1);
+}
+
+@keyframes fade {
+  from{opacity: 0.3}
+  to {opacity: 1}
+}
+
+@media (max-width: 992px){
+  .slides .navigation .prev, .slides .navigation .next{
+    font-size: 18px;
+    padding: 13px;
+  }
+}
+
+@media (max-width: 768px){
+  .slides .navigation .prev, .slides .navigation .next{
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px){
+  .slides .navigation .prev, .slides .navigation .next{
+    font-size: 12px;
+    padding: 7px;
+  }
+}
+
+@media (max-width: 360px){
+  .slides .navigation .prev, .slides .navigation .next{
+    font-size: 11px;
+    padding: 6px;
+  }
+}
+
+
+
+/*===================Kolom======================*/
+tr, th, td {
+    text-align: left;
+}
+
+.button{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 25px;
+    border: 0px solid #3cf7e3;
+    border-radius: 10px;
+}
+
+.button:hover{
+    animation: pulsate 100s
+    ease-in-out;
+}
+
+@keyframes pulsate {
+    0%{
+        box-shadow: 
+        0 0 25px #5ddcff,
+        0 0 50px #4e00c2;
+    }
+}
+
+
+
+header {
+    display: inline;
+}
+
+
+.featured-image {       /* Untuk menetapkan ukuran pada gambar. */
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Memberi warna pada elemen h2 & h3 */
+h2, h3 {
+    color: #3B4894;     
+}
+
+.card header {
+    text-align: center;
+}
+
+.profile header {
+    text-align: center;
+}
+
+
+
+/* Untuk mengatur ukuran gambar logo Kota Tegal pada elemen <aside>. */
+.profile img {          
+    width: 200px;
+}
+
+
+/* Untuk memperbaiki tepian konten pada card karena tampak terlalu sempit. Tapi bisa diatur dengan properti Margin & Padding.*/
+.card {                                             
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+footer {                /* Ubah background dan text pada elemen <footer>, serta beri sebuah padding. */
+    padding: 20px;         
+    color: white;
+    background-color: #3B4894;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 1000px) {         /* Menetapkan rules pada ukuran tertentu*/
+    #content,
+    aside {
+      width: 100%;
+      padding: 0;
+    }
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.kartu {
+    position: relative;
+    height: 360px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.kartu-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: .5s;
+    overflow: hidden;
+    object-fit: cover;
+}
+.kartu-image img {
+    display: block;
+    width: 100%;
+}
+
+
+.details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 120px;
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.details h2 {
+    margin: 0;
+    color: #333;
+}
+
+
+.kartu:hover img {
+    opacity: .4;
+    transition: .5s;
+}
+
+.kartu:hover li a {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+.kartu:hover li:nth-child(1) a {
+    transition-delay: .1s;
+}
+.kartu:hover li:nth-child(2) a {
+    transition-delay: .2s;
+}
+.kartu:hover li:nth-child(3) a {
+    transition-delay: .3s;
+}
+.kartu:hover li:nth-child(4) a {
+    transition-delay: .4s;
+}
+.kartu:hover .kartu-image {
+    transform: translateY(-60px);
+    transition: .5s;
+}
+
+
+/*------------------------------TEXT NEON--------------------*/ 
+
+h1 {
+    font-size: 2em;
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+h1:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 100px #03e9f4;
+}
+
+
+/*--------------------------*/
+.card p a {
+    font-family: 'Quicksand', sans-serif;
+    color: #000;
+    text-decoration: none;
+    padding: 25px auto;
+}
+
+.card table a {
+    font-family: 'Quicksand', sans-serif;
+    color: #000;
+    text-decoration: none;
+    padding: 25px auto;
+}
