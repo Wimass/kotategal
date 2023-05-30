@@ -14,4 +14,6 @@ Berisikan
 - Kuliner yang ada di Kota Tegal.
 
 ## Tampilan Program
-
+- ![alt text](https://github.com/Wimass/kotategal/blob/master/assets/image/Tampilan%20Home.png)
+- ![alt text](https://github.com/Wimass/kotategal/blob/master/assets/image/Tampilan%20Geografis.png)
+- ![alt text](https://github.com/Wimass/kotategal/blob/master/assets/image/Tampilan%20Sejarah.png)
