@@ -16,12 +16,16 @@ Berisikan
 ## Tampilan Program
 - Tampilan Home
   ![alt text](https://github.com/Wimass/kotategal/blob/master/assets/image/Tampilan%20Home.png)
+  
 - Tampilan Sejarah Kota Tegal 
   ![alt text](https://github.com/Wimass/kotategal/blob/master/assets/image/Tampilan%20Sejarah.png)
+  
 - Tampilan Geografis Kota Tegal
   ![alt text](https://github.com/Wimass/kotategal/blob/master/assets/image/Tampilan%20Geografis.png)
+  
 - Tampilan Destinasi Di Kota Tegal
   ![alt text](https://github.com/Wimass/kotategal/blob/master/assets/image/Tampilan%20Destinasi.png)
+  
 - Tampilan Kuliner Khas Kota Tegal
   ![alt text](https://github.com/Wimass/kotategal/blob/master/assets/image/Tampilan%20Kuliner.png)
 
